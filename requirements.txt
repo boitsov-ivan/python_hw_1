@@ -1,9 +1,5 @@
 streamlit
 requests
-json
-os
 pandas
-io
 matplotlib
-seaborn
 datetime
