@@ -1,11 +1,11 @@
 import streamlit as st
 import requests
-import json
-import os
+#import json
+#import os
 import pandas as pd
-import io
+#import io
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 
 
 
@@ -155,7 +155,7 @@ st.subheader("Загрузка файла с историческими данн
 uploaded_file = st.file_uploader("Загрузите CSV файл", type="csv")
 
 
-if st.button(f"Выполнить анализ исторических данных, вывести текущую температура для {city } через API и определить, нормальна ли она для сезона"):
+if st.button(f"Выполнить анализ исторических данных, вывести текущую температуру для {city } через API и определить, нормальна ли она для сезона"):
     if uploaded_file:
         try:
             df = pd.read_csv(uploaded_file, encoding='utf-8')
